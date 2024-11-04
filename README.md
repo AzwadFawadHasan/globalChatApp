@@ -1,4 +1,10 @@
+<<<<<<< HEAD
 # Redis Practice Chat Application
+=======
+# globalChatApp
+Simple implementation to practice redis in CodeIgniter
+
+>>>>>>> 3b82e3689078e5f45287494de90632710ce98b0d
 
 This repository contains practice work on Redis, featuring a basic global chat application built with CodeIgniter 4 and Redis. This project showcases Redis as a fast, in-memory data store to handle real-time messaging, caching, and other data operations.
 
@@ -208,4 +214,8 @@ Contributions are welcome! Please open a pull request if you want to add feature
 
 ### License
 
+<<<<<<< HEAD
 This project is licensed under the MIT License. See LICENSE for more details.
+=======
+This project is licensed under the MIT License. See LICENSE for more details.
+>>>>>>> 3b82e3689078e5f45287494de90632710ce98b0d
