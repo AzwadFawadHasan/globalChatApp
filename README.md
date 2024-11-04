@@ -2,7 +2,7 @@
 # globalChatApp
 Simple implementation to practice redis in CodeIgniter
 
-
+![Visitor Count](https://visitor-badge.laobi.icu/badge?page_id=AzwadFawadHasan.globalChatApp)
 
 This repository contains practice work on Redis, featuring a basic global chat application built with CodeIgniter 4 and Redis. This project showcases Redis as a fast, in-memory data store to handle real-time messaging, caching, and other data operations.
 
