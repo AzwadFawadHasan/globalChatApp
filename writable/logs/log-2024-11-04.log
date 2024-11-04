@@ -1,0 +1,152 @@
+INFO - 2024-11-04 04:02:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-11-04 04:02:49 --> Error connecting to the database: mysqli_sql_exception: Access denied for user 'root'@'localhost' (using password: NO) in C:\wamp64\www\chat_app\system\Database\MySQLi\Connection.php:186
+Stack trace:
+#0 C:\wamp64\www\chat_app\system\Database\MySQLi\Connection.php(186): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'chat_app', 3306, '', 0)
+#1 C:\wamp64\www\chat_app\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\wamp64\www\chat_app\system\Database\BaseConnection.php(616): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\wamp64\www\chat_app\system\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\wamp64\www\chat_app\system\Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\wamp64\www\chat_app\system\BaseModel.php(714): CodeIgniter\Model->doFirst()
+#6 C:\wamp64\www\chat_app\app\Controllers\AuthController.php(51): CodeIgniter\BaseModel->first()
+#7 C:\wamp64\www\chat_app\system\CodeIgniter.php(933): App\Controllers\AuthController->authenticate()
+#8 C:\wamp64\www\chat_app\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthController))
+#9 C:\wamp64\www\chat_app\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\wamp64\www\chat_app\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#11 C:\wamp64\www\chat_app\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 C:\wamp64\www\chat_app\public\index.php(62): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user '****'@'localhost' (using password: NO) in C:\wamp64\www\chat_app\system\Database\MySQLi\Connection.php:231
+Stack trace:
+#0 C:\wamp64\www\chat_app\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\wamp64\www\chat_app\system\Database\BaseConnection.php(616): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\wamp64\www\chat_app\system\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\wamp64\www\chat_app\system\Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\wamp64\www\chat_app\system\BaseModel.php(714): CodeIgniter\Model->doFirst()
+#5 C:\wamp64\www\chat_app\app\Controllers\AuthController.php(51): CodeIgniter\BaseModel->first()
+#6 C:\wamp64\www\chat_app\system\CodeIgniter.php(933): App\Controllers\AuthController->authenticate()
+#7 C:\wamp64\www\chat_app\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthController))
+#8 C:\wamp64\www\chat_app\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\wamp64\www\chat_app\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#10 C:\wamp64\www\chat_app\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 C:\wamp64\www\chat_app\public\index.php(62): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 {main}
+CRITICAL - 2024-11-04 04:02:49 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'localhost' (using password: NO)
+[Method: POST, Route: authenticate]
+in SYSTEMPATH\Database\BaseConnection.php on line 467.
+ 1 SYSTEMPATH\Database\BaseConnection.php(616): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `users`
+WHERE `email` = :email:
+ LIMIT 1', [...], false)
+ 3 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(714): CodeIgniter\Model->doFirst()
+ 5 APPPATH\Controllers\AuthController.php(51): CodeIgniter\BaseModel->first()
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AuthController->authenticate()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(62): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-11-04 04:19:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-04 04:19:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-04 04:20:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-04 04:20:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-04 04:20:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-04 04:21:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-04 04:21:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-04 04:21:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-04 04:35:30 --> Predis\Connection\ConnectionException: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond [tcp://redis-14624.c283.us-east-1-4.ec2.redns.redis-cloud.com:14624]
+[Method: GET, Route: chat/retrieveMessages]
+in VENDORPATH\predis\predis\src\Connection\AbstractConnection.php on line 144.
+ 1 VENDORPATH\predis\predis\src\Connection\StreamConnection.php(109): Predis\Connection\AbstractConnection->onConnectionError('A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond', 10060)
+ 2 VENDORPATH\predis\predis\src\Connection\StreamConnection.php(154): Predis\Connection\StreamConnection->createStreamSocket(Object(Predis\Connection\Parameters), 'tcp://redis-14624.c283.us-east-1-4.ec2.redns.redis-cloud.com:14624', 4)
+ 3 VENDORPATH\predis\predis\src\Connection\StreamConnection.php(80): Predis\Connection\StreamConnection->tcpStreamInitializer(Object(Predis\Connection\Parameters))
+ 4 VENDORPATH\predis\predis\src\Connection\AbstractConnection.php(85): Predis\Connection\StreamConnection->createResource()
+ 5 VENDORPATH\predis\predis\src\Connection\StreamConnection.php(230): Predis\Connection\AbstractConnection->connect()
+ 6 VENDORPATH\predis\predis\src\Connection\AbstractConnection.php(169): Predis\Connection\StreamConnection->connect()
+ 7 VENDORPATH\predis\predis\src\Connection\StreamConnection.php(265): Predis\Connection\AbstractConnection->getResource()
+ 8 VENDORPATH\predis\predis\src\Connection\StreamConnection.php(372): Predis\Connection\StreamConnection->write('*4
+$6
+LRANGE
+$13
+chat_messages
+$1
+0
+$2
+-1
+')
+ 9 VENDORPATH\predis\predis\src\Connection\AbstractConnection.php(122): Predis\Connection\StreamConnection->writeRequest(Object(Predis\Command\Redis\LRANGE))
+10 VENDORPATH\predis\predis\src\Client.php(381): Predis\Connection\AbstractConnection->executeCommand(Object(Predis\Command\Redis\LRANGE))
+11 VENDORPATH\predis\predis\src\Client.php(335): Predis\Client->executeCommand(Object(Predis\Command\Redis\LRANGE))
+12 APPPATH\Controllers\ChatController.php(71): Predis\Client->__call('lrange', [...])
+13 APPPATH\Controllers\ChatController.php(106): App\Controllers\ChatController->getMessages()
+14 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ChatController->retrieveMessages()
+15 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ChatController))
+16 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+17 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+18 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+19 FCPATH\index.php(62): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-11-04 04:36:02 --> Predis\Connection\ConnectionException: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond [tcp://redis-14624.c283.us-east-1-4.ec2.redns.redis-cloud.com:14624]
+[Method: GET, Route: chat/retrieveMessages]
+in VENDORPATH\predis\predis\src\Connection\AbstractConnection.php on line 144.
+ 1 VENDORPATH\predis\predis\src\Connection\StreamConnection.php(109): Predis\Connection\AbstractConnection->onConnectionError('A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond', 10060)
+ 2 VENDORPATH\predis\predis\src\Connection\StreamConnection.php(154): Predis\Connection\StreamConnection->createStreamSocket(Object(Predis\Connection\Parameters), 'tcp://redis-14624.c283.us-east-1-4.ec2.redns.redis-cloud.com:14624', 4)
+ 3 VENDORPATH\predis\predis\src\Connection\StreamConnection.php(80): Predis\Connection\StreamConnection->tcpStreamInitializer(Object(Predis\Connection\Parameters))
+ 4 VENDORPATH\predis\predis\src\Connection\AbstractConnection.php(85): Predis\Connection\StreamConnection->createResource()
+ 5 VENDORPATH\predis\predis\src\Connection\StreamConnection.php(230): Predis\Connection\AbstractConnection->connect()
+ 6 VENDORPATH\predis\predis\src\Connection\AbstractConnection.php(169): Predis\Connection\StreamConnection->connect()
+ 7 VENDORPATH\predis\predis\src\Connection\StreamConnection.php(265): Predis\Connection\AbstractConnection->getResource()
+ 8 VENDORPATH\predis\predis\src\Connection\StreamConnection.php(372): Predis\Connection\StreamConnection->write('*4
+$6
+LRANGE
+$13
+chat_messages
+$1
+0
+$2
+-1
+')
+ 9 VENDORPATH\predis\predis\src\Connection\AbstractConnection.php(122): Predis\Connection\StreamConnection->writeRequest(Object(Predis\Command\Redis\LRANGE))
+10 VENDORPATH\predis\predis\src\Client.php(381): Predis\Connection\AbstractConnection->executeCommand(Object(Predis\Command\Redis\LRANGE))
+11 VENDORPATH\predis\predis\src\Client.php(335): Predis\Client->executeCommand(Object(Predis\Command\Redis\LRANGE))
+12 APPPATH\Controllers\ChatController.php(71): Predis\Client->__call('lrange', [...])
+13 APPPATH\Controllers\ChatController.php(106): App\Controllers\ChatController->getMessages()
+14 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ChatController->retrieveMessages()
+15 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ChatController))
+16 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+17 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+18 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+19 FCPATH\index.php(62): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-11-04 08:57:41 --> Predis\Connection\ConnectionException: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond [tcp://redis-14624.c283.us-east-1-4.ec2.redns.redis-cloud.com:14624]
+[Method: GET, Route: chat/retrieveMessages]
+in VENDORPATH\predis\predis\src\Connection\AbstractConnection.php on line 144.
+ 1 VENDORPATH\predis\predis\src\Connection\StreamConnection.php(109): Predis\Connection\AbstractConnection->onConnectionError('A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond', 10060)
+ 2 VENDORPATH\predis\predis\src\Connection\StreamConnection.php(154): Predis\Connection\StreamConnection->createStreamSocket(Object(Predis\Connection\Parameters), 'tcp://redis-14624.c283.us-east-1-4.ec2.redns.redis-cloud.com:14624', 4)
+ 3 VENDORPATH\predis\predis\src\Connection\StreamConnection.php(80): Predis\Connection\StreamConnection->tcpStreamInitializer(Object(Predis\Connection\Parameters))
+ 4 VENDORPATH\predis\predis\src\Connection\AbstractConnection.php(85): Predis\Connection\StreamConnection->createResource()
+ 5 VENDORPATH\predis\predis\src\Connection\StreamConnection.php(230): Predis\Connection\AbstractConnection->connect()
+ 6 VENDORPATH\predis\predis\src\Connection\AbstractConnection.php(169): Predis\Connection\StreamConnection->connect()
+ 7 VENDORPATH\predis\predis\src\Connection\StreamConnection.php(265): Predis\Connection\AbstractConnection->getResource()
+ 8 VENDORPATH\predis\predis\src\Connection\StreamConnection.php(372): Predis\Connection\StreamConnection->write('*4
+$6
+LRANGE
+$13
+chat_messages
+$1
+0
+$2
+-1
+')
+ 9 VENDORPATH\predis\predis\src\Connection\AbstractConnection.php(122): Predis\Connection\StreamConnection->writeRequest(Object(Predis\Command\Redis\LRANGE))
+10 VENDORPATH\predis\predis\src\Client.php(381): Predis\Connection\AbstractConnection->executeCommand(Object(Predis\Command\Redis\LRANGE))
+11 VENDORPATH\predis\predis\src\Client.php(335): Predis\Client->executeCommand(Object(Predis\Command\Redis\LRANGE))
+12 APPPATH\Controllers\ChatController.php(71): Predis\Client->__call('lrange', [...])
+13 APPPATH\Controllers\ChatController.php(106): App\Controllers\ChatController->getMessages()
+14 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ChatController->retrieveMessages()
+15 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ChatController))
+16 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+17 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+18 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+19 FCPATH\index.php(62): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
