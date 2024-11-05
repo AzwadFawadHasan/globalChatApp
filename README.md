@@ -69,7 +69,10 @@ Redis supports several data structures, each suited to different use cases:
 1. **Clone the repository**:
    ```bash
    git clone https://github.com/azwadfawadhasan/redis_practice_chat_app.git
+   ```
+   ```bash
    cd redis_practice_chat_app
+   ```
 
 ### Installation and Setup (continued)
 
@@ -82,7 +85,7 @@ composer install`
 Redis Client (Predis):
 ----------------------
 
-```bash
+```php
 `composer require predis/predis`
 ```
 3.  **Configure Environment Variables:**
@@ -90,10 +93,11 @@ Redis Client (Predis):
     *   Copy `.env.example` to `.env` and set up your database and Redis credentials
     *   Redis configuration in `.env`:
     
-    
-    `redis.default.host = your_redis_host
+    ```php
+    redis.default.host = your_redis_host
     redis.default.port = your_redis_port
-    redis.default.password = your_redis_password`
+    redis.default.password = your_redis_password
+    ```
     
 4.  **Set Up the Database:**
     *   Import the SQL file provided (`database/chat_app.sql`) into your MySQL database
@@ -153,10 +157,10 @@ Example: Storing and Retrieving Messages with Redis
 
 **Storing Messages:**
 
-```bash
+```php
 `$redis = \Config\Services::redis();
 ```
-```bash
+```php
 $redis->rpush('chat_messages', "[$username] $message");`
 ```
 **Retrieving Messages:**
@@ -165,7 +169,7 @@ $redis->rpush('chat_messages', "[$username] $message");`
 
 `$redis = \Config\Services::redis();
 ```
-```bash
+```php
 $messages = $redis->lrange('chat_messages', 0, -1);`
 ```
 Setting Up Redis as a CodeIgniter Cache Driver
@@ -179,7 +183,7 @@ Configure `app/Config/Cache.php`:
 public $backupHandler = 'file';`
 ```
 ### Project Structure
-```bash
+```
 
 `redis_practice_chat_app/
 ├── app/
@@ -212,8 +216,6 @@ Contributions are welcome! Please open a pull request if you want to add feature
 
 ### License
 
-<<<<<<< HEAD
+
 This project is licensed under the MIT License. See LICENSE for more details.
-=======
-This project is licensed under the MIT License. See LICENSE for more details.
->>>>>>> 3b82e3689078e5f45287494de90632710ce98b0d
+
