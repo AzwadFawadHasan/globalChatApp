@@ -1,5 +1,5 @@
 Install Redis on Windows:
-
+Instead of Memurai we can also use : https://github.com/microsoftarchive/redis/releases
 Download Redis for Windows from Memurai (Redis Labs does not officially support Windows, so Memurai or alternatives like redis-windows are commonly used).
 Install and start the Redis server following the setup instructions provided by the installer.
 
