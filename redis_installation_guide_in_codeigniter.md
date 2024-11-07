@@ -1,3 +1,12 @@
+Install Redis on Windows:
+
+Download Redis for Windows from Memurai (Redis Labs does not officially support Windows, so Memurai or alternatives like redis-windows are commonly used).
+Install and start the Redis server following the setup instructions provided by the installer.
+
+
+Install Predis in CodeIgniter 4:
+composer require predis/predis
+
 # install redis server
 ```bash
 sudo apt update
